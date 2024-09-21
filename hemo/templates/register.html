@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'register.css'%}">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="register-body">
+
+    <div class="wrapper">
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Create Account</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required id="uname" name="fullname">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Age" required id="age" name="age">
+                <!-- <i class='bx bxs-user'></i> -->
+            </div>
+            <div>
+                <select name="gender">
+                    <option value="">Select Your Gender
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    </option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number" required id="phoneno" name="phoneno">
+                <i class='bx bxs-phone'></i>
+            </div>
+            <div>
+                <textarea name="address" placeholder="Address"></textarea>
+                <!-- <i class='bx bxs-user'></i> -->
+            </div>
+            <div>
+                <select id="states" name="state">
+                    <option value="">Select State
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and
+                        Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="District" required id="district" , name="district">
+                <!-- <i class='bx bxs-user'></i> -->
+                <div class="input-box">
+                    <input type="number" placeholder="Pincode" required id="pincode" , name="pincode">
+                    <!-- <i class='bx bxs-user'></i> -->
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required id="email" name="email">
+                    <i class='bx bxs-envelope'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required id="pwd" name="password">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <button type="submit" class="btn">SIGN UP</button>
+
+                <div class="register-link">
+                    <p>Already have an account? <a href="http://127.0.0.1:5501/login.html">LOGIN</a></p>
+                </div>
+        </form>
+    </div>
+    <!-- <script src="mian.js"></script> -->
+
+</body>
+
+</html>

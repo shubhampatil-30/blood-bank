@@ -1,0 +1,69 @@
+{% extends 'donor_dashboard.html' %}
+{% block myblock%}
+
+<br><br>
+<div class="container">
+
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <i class="fas fa-sync-alt xyz"></i>
+                    </div><br>
+                    <div>
+                        Request Made <br>
+                            {{dobj.requestmade}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <i class="fas fa-sync xyz"></i>
+                    </div><br>
+                    <div>
+                        Pending Request <br>
+                        {{dobj.pendingrequest}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <i class="fas fa-check-circle xyz"></i>
+                    </div><br>
+                    <div>
+                        Approved Request<br>
+                        {{dobj.approverequest}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <i class="fas fa-times-circle xyz"></i>
+                    </div><br>
+                    <div>
+                        Rejected Request <br>
+                        {{dobj.rejectedrequest}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+{%endblock%}

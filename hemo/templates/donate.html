@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends 'donor_dashboard.html' %}
+{% block myblock%}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donor</title>
+    <link rel="stylesheet" href="{% static 'donate.css' %}" />
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="box">
+            <form method="post">
+                {% csrf_token %}
+
+                <h1>Donate Blood</h1>
+
+                <!-- <div class="div">
+                    <input type="text" placeholder="Enter Name" name="name" />
+                </div> -->
+                
+                
+
+                <div class="div">
+                    <input type="number" placeholder="Enter Age" name="age" />
+                </div>
+
+                <!-- <div class="div">
+                    <select name="bloodgroup">
+                        <option value="">Select Your Blood Group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        
+                    </select>
+                </div> -->
+
+                <div class="div">
+                    <input type="text" placeholder="Disease(If any)" name="disease" />
+                </div>
+
+                <div class="div">
+                    <input type="number" placeholder="Enter Unit(ml)" name="unit" />
+                </div>
+                <button type="submit" class="btn">Donate</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{%endblock%}

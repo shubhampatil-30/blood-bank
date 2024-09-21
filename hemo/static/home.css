@@ -1,0 +1,61 @@
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    margin-top: -15px;
+
+}
+
+.bg {
+    /* background-image: url('../static/image/b9.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100vh; */
+    /* backdrop-filter: blur(4px); */
+    background-position: center;
+    background: lightblue;
+}
+
+.nav-link:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* .nav-link {
+    backdrop-filter: blur(10px);
+    /* transition-duration: 0.5s; */
+
+
+
+.nav-item {
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+
+/* display: flex;
+max-width: 40rem;
+justify-content: center;
+/* align-items: center; */
+/*margin-left: 200px;
+margin-top: 120px;
+height: 300px;
+} */
+
+
+.navbar {
+    /* background-color: rgb(50, 197, 247); */
+    /* background-color: transparent; */
+    /* backdrop-filter: blur(15px); */
+    background: #009ac4;
+    /* border: 2px solid rgba(0, 0, 0, .5); */
+}
+
+.b {
+    font-size: 30px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}

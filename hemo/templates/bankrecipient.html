@@ -1,0 +1,31 @@
+{% extends 'bank_dash.html' %}
+{% block myblock%}
+<br><br>
+<div class="container">
+    <H4 class="text-center">RECIPIENT DETAILS</H4><br>
+    <table class="table table-light table-hover table-bordered table-striped">
+        <thead style="background: linear-gradient(to top right, #1edef7 0%, #0195ff 100%);">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Profile</th>
+                <th scope="col">Blood Group</th>
+                <th scope="col">Address</th>
+                <th scope="col">Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in dobj %}
+            <tr>
+                <td>{{t.name}}</td>
+                <td><img src="{{t.img.url}}" height="80px" width="80px" /></td>
+                <td>{{t.bloodgroup}}</td>
+                <td>{{t.address}}</td>
+                <td>{{t.phoneno}}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+</div>
+{% endblock %}

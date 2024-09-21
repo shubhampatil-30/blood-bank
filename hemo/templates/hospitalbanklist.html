@@ -1,0 +1,73 @@
+{% extends 'hospital_dash.html' %}
+{% block myblock%}
+
+<head>
+    <style>
+        .label {
+            color: white;
+            padding: 8px;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        /* Green */
+        .info {
+            background-color: #2196F3;
+        }
+
+        /* Blue */
+        .warning {
+            background-color: red;
+        }
+
+        /* Orange */
+        .danger {
+            background-color: #f44336;
+        }
+
+        /* Red */
+        .other {
+            background-color: #e7e7e7;
+            color: black;
+        }
+
+        /* Gray */
+    </style>
+</head>
+<br><br>
+<div class="container">
+    <H4 class="text-center">Blood Bank List</H4><br>
+    <table class="table table-light table-hover table-bordered table-striped">
+        <thead style="background: linear-gradient(to top right, #1edef7 0%, #0195ff 100%);">
+            <tr>
+                <th scope="col">Bank Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">state</th>
+                <th scope="col">city</th>
+                <th scope="col">Number</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in rbobj %}
+            <tr>
+
+
+                <td>{{t.name}}</td>
+                <td>{{t.address}}</td>
+                <td> {{t.state}}</td>
+                <td>{{t.city}}</td>
+                <td>{{t.phoneno}}</td>
+                
+
+            </tr>
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+</div>
+
+{%endblock%}
